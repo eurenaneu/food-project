@@ -1,0 +1,15 @@
+
+
+button {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: var(--darkgreen);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--green);
+}

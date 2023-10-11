@@ -1,0 +1,56 @@
+:root {
+    --salmon: #f79c9c;
+}
+
+.container {
+    padding: 15px 0;
+}
+
+.content {
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-error {
+    border: 1px solid red;
+    background-color: var(--salmon);
+}
+
+.input-error::placeholder {
+    color: red;
+}
+
+.input-error:focus {
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    text-align: start;
+    font-size: 14px;
+}
+
+.error-message::before {
+    content: '* ';
+}
