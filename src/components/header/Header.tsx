@@ -1,18 +1,14 @@
-import './Header.module.css'
-import { Link } from "react-router-dom"
+import styles from './Header.module.css'
+import { NavLink } from "react-router-dom"
 
-interface HeaderProps {
-    title: string
-}
-
-export function Header({ title } : HeaderProps){
+export function Header(){
     return(
         <header>
-            <h1>{title}</h1>
+            <h1>FOOD!</h1>
 
             <ul>
-                <li><Link to="/">Início</Link></li>
-                <li><Link to="/form">Registrar</Link></li>
+                <li className={styles["nav-item"]}><NavLink to="/">Cardápio</NavLink></li>
+                <li className={styles["nav-item"]}><NavLink to="/form">Cadastrar</NavLink></li>
             </ul>
         </header>
     )
