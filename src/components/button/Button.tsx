@@ -1,13 +1,14 @@
+import { ButtonHTMLAttributes } from 'react'
 import './Button.module.css'
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     text: String,
 }
 
-export function Button({ text } : ButtonProps){
+export function Button({ text, ...buttonProps } : ButtonProps){
     return(
         <>
-            <button type="submit">{text.toUpperCase()}</button>
+            <button {...buttonProps}>{text.toUpperCase()}</button>
         </>
     )
 }
