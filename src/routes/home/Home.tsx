@@ -1,14 +1,14 @@
 import styles from './Home.module.css'
 import { Card } from '../../components/card/Card'
 import { Header } from '../../components/header/Header'
-import { useFoodData } from '../../hooks/useFoodData'
+import { useFoodDataActive } from '../../hooks/useFoodDataActive'
 
 export function Home() {
-  const { data } = useFoodData();
+  const { data } = useFoodDataActive();
 
   return (
     <div className={styles.container}>
-      <Header title='Cardápio'/>
+      <Header/>
       
       <main className={styles.content}>
 
@@ -17,9 +17,10 @@ export function Home() {
             <h2>Nada no cardápio hoje...</h2>
           </div>}
 
-        {data != null && <div className={styles["card-grid"]}>
+        {data != null && <div className={styles["card-list"]}>
           {data?.map(foodData =>
             <Card
+              key = { foodData.id }
               valor = { foodData.valor.toFixed(2) }
               nome = { foodData.nome.toUpperCase() }
             />
