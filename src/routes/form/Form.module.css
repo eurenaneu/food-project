@@ -1,5 +1,5 @@
 :root {
-    --salmon: #f79c9c;
+    --salmon: #f8caca;
 }
 
 .container {
@@ -8,7 +8,9 @@
 
 .content {
     display: flex;
+    flex-direction: column;
     padding: 20px 60px;
+    row-gap: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -16,6 +18,7 @@
 form {
     display: flex;
     flex-direction: column;
+    width: 500px;
     flex-wrap: wrap;
     row-gap: 24px;
 }
@@ -24,7 +27,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
+    justify-content: space-between;
 }
 
 .form-group {
@@ -45,6 +48,13 @@ form {
     outline: none;
 }
 
+.error-container {
+    background-color: hsla(0, 100%, 50%, 0.25);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
 .error-message {
     color: red;
     text-align: start;
@@ -53,4 +63,8 @@ form {
 
 .error-message::before {
     content: '* ';
+}
+
+hr {
+    width: 100%;
 }
