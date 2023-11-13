@@ -1,34 +1,30 @@
 header {
     display: flex;
-    place-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
-    width: 25%;
+    width: 500px;
     margin: 0 auto;
-    border-radius: 50px;
-    padding: 2em 0;
-    row-gap: 16px;
+    border-radius: 10px;
+    padding: 20px 35px;
     background-color: var(--darkgreen);
+    color: var(--bg);
 }
 
 h1 {
-    display: flex;
+    font-size: 24px;
 }
 
 ul {
     display: flex;
     list-style-type: none;
-    flex-direction: row;
     justify-content: center;
     column-gap: 24px;
 }
 
 li a {
     font-weight: 500;
-    color: var(--opaquegreen);
+    font-size: 18px;
+    color: var(--bg);
     text-decoration: inherit;
-}
-  
-li a:hover {
-    color: white;
 }
