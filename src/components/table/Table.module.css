@@ -1,0 +1,53 @@
+.tabela {
+    table-layout: fixed;
+    outline: none;
+    border-spacing: 1px;
+    max-width: 500px;
+}
+
+.coluna {
+    background-color: var(--darkgreen);
+    padding: 15px;
+}
+
+.coluna:first-child {
+    border-radius: 10px 0px 0px;
+}
+
+.coluna:last-child {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.tabela tbody {
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 300px;
+}
+
+.inactive-food {
+    color: var(--red);
+    font-weight: 700;
+}
+
+.active-food {
+    color: var(--green);
+    font-weight: 700;
+}
+
+.modal {
+    display: flex;
+    place-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
