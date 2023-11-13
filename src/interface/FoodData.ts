@@ -1,5 +1,6 @@
 export interface FoodData {
     id?: number,
     nome: string,
-    valor: number
+    valor: number,
+    active?: boolean
 }
