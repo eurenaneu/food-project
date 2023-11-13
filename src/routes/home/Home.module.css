@@ -8,9 +8,10 @@
   padding: 15px 0;
 }
 
-.card-grid {
+.card-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin: 0 100px;
 }
