@@ -1,27 +1,45 @@
-# React + TypeScript + Vite
+# Food Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Em breve, descrição detalhada.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=)
+![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=)
+![Axios](https://img.shields.io/static/v1?style=for-the-badge&message=Axios&color=5A29E4&logo=Axios&logoColor=FFFFFF&label=)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projeto front-end de cardápio que utiliza API em Java
 
-## Expanding the ESLint configuration
+## Tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React com Typescript
+- Axios
+- TanStack Query
+- React Hook Form
+- React Router
 
-- Configure the top-level `parserOptions` property like this:
+IDE: Visual Studio Code
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Instalação
+
+1. Clone o repositório para a sua IDE
+   
+```bash
+git clone https://github.com/eurenaneu/food-project.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Instale as dependências do package-lock.json
+
+```bash
+npm install
+```
+
+3. Execute o script para abrir em localhost
+
+```bash
+npm run dev
+```
+
+## Rotas
+```markdown
+/ - Menu inicial com cardápio (Requisição GET)
+/form - Formulário para cadastro de pratos de comida (Requisição POST)
+```
