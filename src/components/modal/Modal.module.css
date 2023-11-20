@@ -71,3 +71,11 @@
 .input-error:focus {
     outline: none;
 }
+
+.food-name {
+    font-weight: bold;
+}
+
+.modal-message {
+    color: black;
+}
