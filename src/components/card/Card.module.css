@@ -40,9 +40,19 @@
     cursor: pointer;
 }
 
-.card h2 {
-    line-height: 28px;
+.nome {
+    display: -webkit-box;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.nome h2 {
+    line-height: 36px;
     text-align: start;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 300;
 }
