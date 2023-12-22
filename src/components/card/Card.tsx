@@ -13,7 +13,9 @@ export function Card({ nome, valor } : CardProps){
 
     return(
         <div className={styles.card} onClick={handleClick}>
-            <h2>{nome}</h2>
+            <div className={styles.nome}>
+                <h2>{nome}</h2>
+            </div>
             <div className={styles.valores}>
                 <p>R${valor}</p>
             </div>
